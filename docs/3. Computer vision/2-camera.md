@@ -5,4 +5,4 @@
 
 ## Distance determination
 [Computing distance from image](https://www.baeldung.com/cs/cv-compute-distance-from-object-video)
-![Distance calculation](../assets/distance_calculation.png)
+![Distance calculation](./assets/distance_calculation.png)

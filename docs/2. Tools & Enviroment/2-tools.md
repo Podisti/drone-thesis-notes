@@ -40,8 +40,8 @@ brew install gz-harmonic
 ## ROS 2 Humble
 Collection of libraries and tools for programming robot systems (including drones)  
 [What is ROS?](https://www.youtube.com/watch?v=7TVWlADXwRw)
-![ROS2 overview](../assets/ros-overview0.png)
-![ROS2 overview](../assets/ros-overview1.png)
+![ROS2 overview](./assets/ros-overview0.png)
+![ROS2 overview](./assets/ros-overview1.png)
 
 [Documentation](https://docs.ros.org/en/humble/Installation.html)  
 [Mac installation using conda](https://robostack.github.io/GettingStarted.html#__tabbed_1_1)
@@ -61,4 +61,4 @@ Mission planner and monitoring tool
 [Installation](https://mavsdk.mavlink.io/main/en/python/quickstart.html)
 
 ## Running environment
-![Running simulation](../assets/running_simulation.png)
+![Running simulation](./assets/running_simulation.png)
