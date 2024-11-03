@@ -11,6 +11,7 @@ Here are existing projects, which serve as a reference, an overview of existing 
 [PX4 Drone Precision Landing Gazebo Simulation](https://youtu.be/iRnLB31aQmA?si=iPD5nfcjfXKfa2IN)  
 [Vision based Autonomous Quadrotor Landing on a Moving Platform](https://www.youtube.com/watch?v=Tz5ubwoAfNE)  
 [PRECISION LANDING | with OPENCV and ARUCO Markers | Part 1](https://www.youtube.com/watch?v=wlT_0fhGrGg&list=PL4qdhmqiBsslUZ0cwWVeaPFafF18xq60k)  
+[Making a Drone Smarter With Motion Planning](https://www.youtube.com/watch?v=p8frNNYQNV4)
 
 ## Documents
 
