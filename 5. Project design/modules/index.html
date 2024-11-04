@@ -14,7 +14,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
     
     
       
@@ -585,36 +585,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#camera-processing-module-for-image-acquisition" class="md-nav__link">
+  <a href="#diagram" class="md-nav__link">
     <span class="md-ellipsis">
-      Camera processing module for image acquisition.
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#marker-detection-module-using-opencv" class="md-nav__link">
-    <span class="md-ellipsis">
-      Marker detection module using OpenCV.
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#drone-control-interface-for-px4-commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Drone control interface for PX4 commands.
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#path-planning-and-navigation-to-handle-marker-approach-and-landing" class="md-nav__link">
-    <span class="md-ellipsis">
-      Path planning and navigation to handle marker approach and landing.
+      Diagram
     </span>
   </a>
   
@@ -663,36 +636,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#camera-processing-module-for-image-acquisition" class="md-nav__link">
+  <a href="#diagram" class="md-nav__link">
     <span class="md-ellipsis">
-      Camera processing module for image acquisition.
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#marker-detection-module-using-opencv" class="md-nav__link">
-    <span class="md-ellipsis">
-      Marker detection module using OpenCV.
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#drone-control-interface-for-px4-commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Drone control interface for PX4 commands.
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#path-planning-and-navigation-to-handle-marker-approach-and-landing" class="md-nav__link">
-    <span class="md-ellipsis">
-      Path planning and navigation to handle marker approach and landing.
+      Diagram
     </span>
   </a>
   
@@ -714,11 +660,17 @@
 
 
 <h1 id="modules">Modules</h1>
-<p>Which modules will the project consist of, and what role will they have?</p>
-<h2 id="camera-processing-module-for-image-acquisition">Camera processing module for image acquisition.</h2>
-<h2 id="marker-detection-module-using-opencv">Marker detection module using OpenCV.</h2>
-<h2 id="drone-control-interface-for-px4-commands">Drone control interface for PX4 commands.</h2>
-<h2 id="path-planning-and-navigation-to-handle-marker-approach-and-landing">Path planning and navigation to handle marker approach and landing.</h2>
+<p>Overview of suggested modules and their functionality.</p>
+<p><strong>Camera processing module for image acquisition.</strong><br />
+- This module will receive images captured by the camera and perform preprocessing, so that the image can be correctly analyzed. It will then send the prepared image to the <em>Marker detection</em> module.</p>
+<p><strong>Marker detection module using OpenCV.</strong><br />
+- This module will receive the prepared image and extract the position of a marker from the image. It will also handle situations, when the marker is not visible by informing the <em>Path planning</em> module.</p>
+<p><strong>Path planning and navigation to handle marker approach and landing.</strong><br />
+- This module will receive the position of the marker in the frame and calculate a target position for the drone. This target will be sent to the drone control interface. This module will also dynamically adjust the target, as of to increase precision.</p>
+<p><strong>Drone control interface for PX4 commands.</strong><br />
+- This module receives a goal for the drone to reach and will translate it into PX4 commands and send it to the drone. It will also send information about the drones' position and movement back to the Path planning module for adjusting further commands.</p>
+<h2 id="diagram">Diagram</h2>
+<p><img alt="Modules diagram" src="../assets/modules.png" /></p>
 
 
 
